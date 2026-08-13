@@ -1,7 +1,11 @@
 ﻿namespace Domain.Enums
 {
-    public class Class1
+    public enum NotificationType
     {
-
+        JoinRequestAccepted = 1,
+        JoinRequestRejected = 2,
+        MeetingCreated = 3,
+        MeetingStarted = 4,
+        AnnouncementCreated = 5
     }
 }

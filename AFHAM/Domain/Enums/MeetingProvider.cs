@@ -4,7 +4,9 @@ using System.Text;
 
 namespace Domain.Enums
 {
-    internal class MeetingProvider
+    public enum MeetingProvider
     {
+        GoogleMeet = 1,
+        MicrosoftTeams = 2
     }
 }

@@ -4,7 +4,11 @@ using System.Text;
 
 namespace Domain.Enums
 {
-    internal class MeetingStatus
+    public enum MeetingStatus
     {
+        Scheduled = 1,
+        Live = 2,
+        Completed = 3,
+        Cancelled = 4
     }
 }

@@ -4,7 +4,9 @@ using System.Text;
 
 namespace Domain.Enums
 {
-    internal class MembershipStatus
+    public enum MembershipStatus
     {
+        Active = 1,
+        Removed = 2
     }
 }

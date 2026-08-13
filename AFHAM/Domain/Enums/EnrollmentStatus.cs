@@ -4,7 +4,9 @@ using System.Text;
 
 namespace Domain.Enums
 {
-    internal class EnrollmentStatus
+    public enum EnrollmentStatus
     {
+        Open = 1,
+        Closed = 2
     }
 }

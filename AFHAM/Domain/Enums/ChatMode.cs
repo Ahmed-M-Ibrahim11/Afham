@@ -4,7 +4,10 @@ using System.Text;
 
 namespace Domain.Enums
 {
-    internal class ChatMode
+    public enum ChatMode
     {
+        Open = 1,
+        TeacherOnly = 2,
+        Closed = 3
     }
 }
