@@ -1,6 +1,7 @@
 ﻿using Domain.Enums;
 using System;
 using System.Collections.Generic;
+using System.Security.AccessControl;
 using System.Text;
 
 namespace Domain.Entities;
@@ -16,6 +17,9 @@ public class TeacherGroup : Auditable
 
     public int Capacity { get; private set; }
 
+    public string Description { get; private set; } = null!;
+    
+    public string displayOrder { get; private set; } = null!;
     public EnrollmentStatus EnrollmentStatus { get; private set; }
 
     public ChatMode ChatMode { get; private set; }
@@ -29,8 +33,13 @@ public class TeacherGroup : Auditable
     private readonly List<GroupMembership> _members = [];
 
     public IReadOnlyCollection<GroupMembership> Members => _members;
+    private readonly List<GroupMembership> _memberships = [];
+
+    public IReadOnlyCollection<GroupMembership> Memberships
+        => _memberships;
 
     private readonly List<GroupJoinRequest> _joinRequests = [];
+
 
     public IReadOnlyCollection<GroupJoinRequest> JoinRequests => _joinRequests;
 

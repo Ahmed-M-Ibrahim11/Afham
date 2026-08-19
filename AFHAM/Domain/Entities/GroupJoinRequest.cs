@@ -46,7 +46,6 @@ public class GroupJoinRequest : Auditable
 
         return new GroupJoinRequest
         {
-            Id = Guid.NewGuid(),
             StudentId = studentId,
             GroupId = groupId,
             Status = JoinRequestStatus.Pending,

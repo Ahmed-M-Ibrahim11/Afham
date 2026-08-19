@@ -15,6 +15,10 @@ namespace Domain.Entities
 
         public DateTimeOffset SentAt { get; private set; }
 
+        public bool IsEdited { get; private set; }
+
+        public string? EditeAt { get; private set; }
+
         // Navigation
 
         public TeacherGroup Group { get; private set; } = null!;

@@ -6,11 +6,11 @@ namespace Domain.Entities;
 
 public class Grade : Auditable
 {
-    public int Id { get; private set; }
-
     public string Name { get; private set; } = null!;
 
     public int DisplayOrder { get; private set; }
+
+    //public int DisplayOrder { get; private set; }
 
     private readonly List<StudentProfile> _students = [];
     public IReadOnlyCollection<StudentProfile> Students => _students;

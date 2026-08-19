@@ -21,5 +21,7 @@ namespace Domain
 
         public string? TenantId { get; set; }
         public string? Note { get; set; }
+
+      
     }
 }

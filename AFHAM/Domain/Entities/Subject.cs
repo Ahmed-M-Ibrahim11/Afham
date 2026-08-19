@@ -5,13 +5,12 @@ namespace Domain.Entities;
 
 public class Subject : Auditable
 {
-    //public int Id { get; private set; }
 
     public string Name { get; private set; } = null!;
 
-    public string? Icon { get; private set; }
+    //public string? Icon { get; private set; }
 
-    public string? Color { get; private set; }
+    //public string? Color { get; private set; }
 
     public int DisplayOrder { get; private set; }
 
@@ -31,8 +30,8 @@ public class Subject : Auditable
         int displayOrder = 0)
     {
         Name = name;
-        Icon = icon;
-        Color = color;
+        //Icon = icon;
+        //Color = color;
         DisplayOrder = displayOrder;
     }
 
@@ -43,11 +42,9 @@ public class Subject : Auditable
         int displayOrder)
     {
         Name = name;
-        Icon = icon;
-        Color = color;
+        //Icon = icon;
+        //Color = color;
         DisplayOrder = displayOrder;
     }
-    //private readonly List<TeacherProfile> _teachers = [];
 
-    //public IReadOnlyCollection<TeacherProfile> Teachers => _teachers;
 }

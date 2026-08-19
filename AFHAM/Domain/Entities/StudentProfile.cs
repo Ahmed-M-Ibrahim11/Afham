@@ -11,8 +11,19 @@ public class StudentProfile : Auditable
 
     public string? ProfileImage { get; private set; }
 
-    // Navigation
+    public string ParentName { get; private set; } = null!;
 
+    public int? ParentPhone { get; private set; }
+
+    // Navigation
+    private readonly List<GroupJoinRequest> _joinRequests = [];
+
+    public IReadOnlyCollection<GroupJoinRequest> JoinRequests
+        => _joinRequests;
+    private readonly List<GroupMembership> _groupMemberships = [];
+
+    public IReadOnlyCollection<GroupMembership> GroupMemberships
+        => _groupMemberships;
     public Grade Grade { get; private set; } = null!;
 
     private StudentProfile()
