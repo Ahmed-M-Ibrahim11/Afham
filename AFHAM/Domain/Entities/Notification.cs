@@ -49,7 +49,6 @@ namespace Domain.Entities
 
             return new Notification
             {
-                Id = Guid.NewGuid(),
                 UserId = userId,
                 Type = type,
                 Title = title,

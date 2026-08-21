@@ -49,7 +49,6 @@ namespace Domain.Entities
 
             return new Announcement
             {
-                Id = Guid.NewGuid(),
                 GroupId = groupId,
                 Title = title,
                 Content = content,

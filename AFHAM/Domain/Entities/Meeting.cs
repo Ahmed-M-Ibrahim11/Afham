@@ -60,7 +60,6 @@ namespace Domain.Entities
 
             return new Meeting
             {
-                Id = Guid.NewGuid(),
                 GroupId = groupId,
                 Title = title,
                 Provider = provider,

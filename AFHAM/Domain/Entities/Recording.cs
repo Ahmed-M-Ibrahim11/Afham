@@ -48,7 +48,6 @@ namespace Domain.Entities
 
             return new Recording
             {
-                Id = Guid.NewGuid(),
                 MeetingId = meetingId,
                 VideoUrl = videoUrl,
                 RecordedAt = recordedAt,

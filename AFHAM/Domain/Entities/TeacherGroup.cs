@@ -32,7 +32,6 @@ public class TeacherGroup : Auditable
 
     private readonly List<GroupMembership> _members = [];
 
-    public IReadOnlyCollection<GroupMembership> Members => _members;
     private readonly List<GroupMembership> _memberships = [];
 
     public IReadOnlyCollection<GroupMembership> Memberships
@@ -50,6 +49,11 @@ public class TeacherGroup : Auditable
     private readonly List<Announcement> _announcements = [];
 
     public IReadOnlyCollection<Announcement> Announcements => _announcements;
+
+    private readonly List<ChatMessage> _chatMessages = [];
+
+    public IReadOnlyCollection<ChatMessage> ChatMessages
+        => _chatMessages;
 
     // EF Core
     private TeacherGroup()
@@ -85,7 +89,6 @@ public class TeacherGroup : Auditable
 
         return new TeacherGroup
         {
-            Id = Guid.NewGuid(),
             TeacherId = teacherId,
             GradeId = gradeId,
             Name = name,

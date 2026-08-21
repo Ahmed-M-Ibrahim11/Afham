@@ -45,7 +45,6 @@ public class GroupMembership : Auditable
 
         return new GroupMembership
         {
-            Id = Guid.NewGuid(),
             StudentId = studentId,
             GroupId = groupId,
             Status = MembershipStatus.Active,

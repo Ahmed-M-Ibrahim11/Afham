@@ -25,8 +25,8 @@ public class Subject : Auditable
 
     public Subject(
         string name,
-        string? icon = null,
-        string? color = null,
+        //string? icon = null,
+        //string? color = null,
         int displayOrder = 0)
     {
         Name = name;

@@ -17,7 +17,7 @@ namespace Domain.Entities
 
         public bool IsEdited { get; private set; }
 
-        public string? EditeAt { get; private set; }
+        public DateTimeOffset? EditedAt { get; private set; }
 
         // Navigation
 
@@ -50,7 +50,6 @@ namespace Domain.Entities
 
             return new ChatMessage
             {
-                Id = Guid.NewGuid(),
                 GroupId = groupId,
                 SenderId = senderId,
                 Content = content,
