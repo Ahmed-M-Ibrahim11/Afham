@@ -9,6 +9,7 @@ public class NotificationConfiguration
 {
     public void Configure(EntityTypeBuilder<Notification> builder)
     {
+
         builder.ToTable("Notifications");
 
         builder.HasKey(x => x.Id);
